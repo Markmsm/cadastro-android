@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mk.cc.RelatorioOsDate"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <TextView
+        android:id="@+id/txtViewInitialDateRelatorioOs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:text="Data inicial:"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <TextView
+        android:id="@+id/txtViewFinalDateRelatorioOs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:text="DataFinal:"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <CheckBox
+        android:id="@+id/checkBoxOpenedOs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O.S. Abertas"
+        android:layout_below="@+id/txtViewFinalDateRelatorioOs"
+        android:layout_margin="6dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:id="@+id/checkBoxClosedOs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O.S. Encerradas"
+        android:layout_below="@+id/txtViewFinalDateRelatorioOs"
+        android:layout_margin="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <DatePicker
+        android:id="@+id/datePickerOs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtViewCountOs"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxOpenedOs"
+        android:text="Não há nada para exibir aqui!" />
+
+    <ListView
+        android:id="@+id/listViewOsDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_below="@+id/txtViewCountOs"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mk.cc.RelatorioDefects">
+
+    <TextView
+        android:id="@+id/txtViewInitialDateRelatorioDefeitos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:text="Data inicial:"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <TextView
+        android:id="@+id/txtViewFinalDateRelatorioDefeitos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:text="DataFinal:"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <DatePicker
+        android:id="@+id/datePickerDefeitos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtViewNomeDefeito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Defeito"
+        android:layout_below="@+id/txtViewInitialDateRelatorioDefeitos"
+        android:layout_alignLeft="@+id/listViewDefeitos"
+        android:layout_alignStart="@+id/listViewDefeitos" />
+
+    <TextView
+        android:id="@+id/txtViewCountRelatorioDefeito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/listViewDefeitos"
+        android:layout_alignRight="@+id/listViewDefeitos"
+        android:layout_alignTop="@+id/txtViewNomeDefeito"
+        android:text="Quantidade" />
+
+    <ListView
+        android:id="@+id/listViewDefeitos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewInitialDateRelatorioDefeitos"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignLeft="@+id/txtViewInitialDateRelatorioDefeitos"
+        android:layout_alignStart="@+id/txtViewInitialDateRelatorioDefeitos" />
+
+</RelativeLayout>

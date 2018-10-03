@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CadClient">
+
+    <item
+        android:id="@+id/endCadClient"
+        android:title="Concluir"
+        android:icon="@drawable/ic_done"
+        app:showAsAction="always">
+
+    </item>
+
+</menu>
